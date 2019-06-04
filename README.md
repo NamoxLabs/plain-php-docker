@@ -1,15 +1,15 @@
 # Commands
 
-## To Run Unit tests
+### To Run Unit tests
 code/vendor/bin/phpunit --bootstrap code/vendor/autoload.php --testdox ./tests
 
 ### Download compose phar
 curl -s https://getcomposer.org/installer | php --
 
-## Run docker build for automation testing
+### Run docker build for automation testing
 docker-compose -f docker-compose.test.yml -p ci build
 
-## Run docker for automation testing
+### Run docker for automation testing
 docker-compose -f docker-compose.test.yml -p ci up
 
 ## Run docker compose start and logs tail
